@@ -218,7 +218,11 @@ main {
   height: 25rem;
   width: 25rem;
   object-fit: cover;
-  filter: grayscale(2);
+  filter: brightness(150%);
+  filter: contrast(120%);
+  filter: drop-shadow(10px 10px 10px rgb(23, 24, 23));
+
+
   align-self: flex-start;
   border-radius: 50%;
 }
