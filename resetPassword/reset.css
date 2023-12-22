@@ -1,0 +1,35 @@
+/* media queries */
+
+@media screen  and (max-width:430px){
+  
+    header{
+        padding: 0 15px;
+        margin-bottom: -50px;
+    }
+    
+    .form__section{
+        width: 100%;
+    
+    }
+    nav ul{
+        gap: 10px !important;
+    }
+    
+    }
+    
+    @media screen  and (max-width:840px){
+        header{
+            margin-bottom: -20px;
+        }
+        nav ul{
+            gap: 25px;
+          }
+        
+          nav ul li > a{
+            font-size: 1.2rem;
+          }
+    
+          .form__section{
+            width: 90%;
+          }
+    }
