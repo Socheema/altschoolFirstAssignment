@@ -1,0 +1,366 @@
+:root {
+  --primary__color: #000;
+  --nav__color: #333;
+  --color__blue: rgb(68, 68, 236);
+  --dark-shadow: 2px 5px 15px rgba(0, 0, 0, 0.2);
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --color__white: #ffffff;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--primary__color);
+  display: flex;
+  flex-direction: column;
+}
+
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--nav__color);
+  text-shadow: var(--light-shadow);
+}
+
+svg {
+  width: 80px;
+  padding: 0 !important;
+  margin: 0 !important;
+  object-fit: contain;
+}
+
+header {
+  display: flex;
+  padding: 0 30px;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: var(--dark-shadow);
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+}
+
+.form__section {
+  display: flex;
+  flex-direction: column;
+  margin: 4rem;
+  width: 80%;
+  height: auto;
+  align-self: center;
+  gap: 20px;
+  padding: 20px 20px;
+  box-shadow: var(--light-shadow);
+}
+
+.form__section h2 {
+  font-weight: 800;
+  font-size: 1.8rem;
+  padding-block: 5px;
+}
+
+.form__section h4 {
+  font-weight: 1.3rem;
+  font-weight: 500;
+}
+
+form div {
+  display: flex;
+  width: 100%;
+  gap: 30px;
+}
+
+form .form__right,
+form .form__left {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 1;
+}
+form label {
+  display: flex;
+  font-weight: 500;
+  font-size: 0.85rem;
+  flex-wrap: wrap;
+  color: var(--nav__color);
+  padding-bottom: 5px;
+  margin-bottom: -30px !important;
+}
+
+form input,
+form select {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+  padding: 18px 8px;
+  width: 100%;
+  border: 0.1px solid rgb(248, 246, 246);
+  border-radius: 3px;
+  cursor: pointer;
+  margin-bottom: 5px !important;
+}
+form input:hover,
+form select:hover {
+  border: 0.1px solid rgb(75, 136, 250);
+}
+form input::placeholder {
+  font-size: 0.7rem;
+  font-weight: 400;
+  opacity: 0.5;
+}
+
+form select option {
+  color: var(--color__red);
+}
+
+.form__section p {
+  padding: 10px;
+  font-weight: 0.8rem;
+}
+.form__section p span a {
+  color: var(--color__blue);
+  cursor: pointer;
+}
+button,
+form button a {
+  width: 100%;
+  padding: 12px;
+  color: var(--color__white);
+  background-color: rgb(95, 95, 252);
+  border: none;
+  outline: none;
+  border-radius: 3px;
+}
+
+.form input {
+  width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 2;
+  align-self: flex-start;
+}
+.hero__container .hero {
+  padding: 30px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  position: relative;
+  background-color: #fff;
+}
+
+.hero h1,
+.about h3 {
+  color: #091e42;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0.37px;
+}
+
+.hero p {
+  color: #344563;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.social ul {
+  display: flex;
+  align-self: flex-start;
+  gap: 10px;
+}
+
+.social ul li a:hover {
+  display: block;
+  transform: scale(1.5);
+}
+
+.hero__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 35px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.hero__container img {
+  display: flex;
+  flex: 1;
+  height: 25rem;
+  width: 25rem;
+  object-fit: cover;
+  filter: grayscale(2);
+  align-self: flex-start;
+  border-radius: 50%;
+}
+
+.about {
+  align-self: center;
+  margin-top: 20px;
+}
+.about h3 {
+  text-align: center;
+  text-decoration-style: unset;
+}
+.card {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 150px 150px 150px;
+  padding: 30px;
+  gap: 20px;
+  box-shadow: var(--light-shadow);
+}
+
+.card div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: white;
+  transition: all 1.5s ease;
+  box-shadow: var(--dark-shadow);
+}
+
+.card div:hover {
+  border-radius: 15px;
+  transform: scale(0.9);
+}
+
+.card div:nth-child(1) {
+  background-color: blue;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+.card div:nth-child(2) {
+  background-color: rgb(218, 154, 14);
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+.card div:nth-child(3) {
+  background-color: rgb(14, 181, 218);
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.card div:nth-child(4) {
+  background-color: rgb(218, 14, 21);
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.card div:nth-child(5) {
+  background-color: rgb(27, 25, 25);
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+/* media queries */
+
+@media screen and (max-width: 430px) {
+  header {
+    padding: 0 15px;
+    margin-bottom: -40px;
+  }
+
+  .hero {
+    width: 100%;
+  }
+  .hero__container {
+    flex-direction: column;
+    width: 100%;
+    > img {
+      display: none;
+    }
+
+    .hero__container > .about > h1 {
+      font-size: 1rem;
+    }
+  }
+
+  .about {
+    width: 100%;
+  }
+  .card {
+    width: 90%;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px 50px 50px;
+    align-items: center;
+    justify-content: center;
+
+    div {
+      padding: 20px;
+    }
+  }
+}
+
+@media screen  and (max-width:840px){
+  nav ul{
+    gap: 25px;
+  }
+
+  nav ul li > a{
+    font-size: 1.2rem;
+  }
+
+  .hero,.hero__container{
+width: 100%;
+.about{
+  flex: 3;
+  margin-right: 10px;
+}
+  }
+
+  .hero  img{
+    width: 100%;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex: 1;
+    align-self: center;
+  }
+
+  .card {
+    width: 90%;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px 50px 50px;
+    align-items: center;
+    justify-content: center;
+
+    div {
+      padding: 20px;
+    }
+  }
+  
+  .about {
+    width: 100%;
+  }
+}
