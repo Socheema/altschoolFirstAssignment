@@ -319,6 +319,12 @@ main {
       padding: 20px;
     }
   }
+  nav ul {
+    gap: 10px !important;
+  }
+  nav ul li a{
+    font-size: .85rem !important;
+  }
 }
 
 @media screen  and (max-width:840px){

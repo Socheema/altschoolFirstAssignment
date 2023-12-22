@@ -19,6 +19,10 @@
   form select {
     width: 100%;
   }
+
+  nav ul{
+    gap: 10px !important;
+}
 }
 
 @media screen  and (max-width:840px){
